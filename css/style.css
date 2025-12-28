@@ -1,1 +1,253 @@
 @charset "utf-8";
+
+/* ===================================
+   共通設定
+=================================== */
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1100px;
+  margin: auto;
+}
+
+/* ===================================
+   ヘッダー
+=================================== */
+header {
+  height: 80px;
+  background: #fff;
+}
+
+.header-wrapper,
+.footer-wrapper {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+}
+
+.header-wrapper {
+  justify-content: space-between;
+}
+
+.header-icon {
+  margin: 15px 0;
+  color: #777;
+}
+
+.contact-btn {
+  color: #fff;
+  background-color: #6ba7eb;
+  padding: 10px 25px; 
+  border-radius: 5px;
+  margin: 15px 0px;
+  transition: color 0.3s;
+  display: inline-flex;      
+  align-items: center;        
+}
+
+.contact-btn:hover {
+  color: #333;
+}
+
+/* ===================================
+   キービジュアル
+=================================== */
+.keyvisual {
+  padding: 400px 0;
+  text-align: center;
+  background: url(../images/keyvisual/keyvisual.jpg) center/cover;
+}
+
+.main-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  margin-bottom: 30px;   
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;    
+}
+
+/* ===================================
+   セクション共通の見出し
+=================================== */
+.NEWS-heading,
+.skills-heading,
+.plan-heading {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* ===================================
+   NEWS
+=================================== */
+.NEWS {
+  background: #e3f2fd;
+  padding-top: 50px;
+}
+
+.inner-NEWS {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NEWS-img {
+  display: flex;
+  justify-content: center;
+  flex: 4;
+}
+
+.inner-NEWS img {
+  width: 250px;
+}
+
+.NEWS-text {
+  flex: 6;
+}
+
+.NEWS-heading {
+  margin: 20px 0 35px;
+}
+
+.detail {
+  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+/* ===================================
+   SKILLS
+=================================== */
+.skills {
+  background: #fff;
+  padding: 50px 0 100px;
+}
+
+.skills-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-img img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.skills-img li {
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.skills-img img:hover {
+  opacity: 1.0;
+}
+
+.skills-img li:nth-child(3n-2) {
+  margin-right: 100px;
+}
+
+.skills-img li:nth-child(3n) {
+  margin-left: 100px;
+}
+
+/* ===================================
+   PLAN
+=================================== */
+.plan {
+  background: #d0dfea;
+  padding: 50px 0;
+}
+
+.plan-heading {
+  margin-bottom: 50px;
+}
+
+.plan-table {
+  width: 100%;
+  text-align: center;
+}
+
+.plan-table td,
+.plan-table th {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  width: 25%;
+}
+
+.plan-table tr:nth-child(1) {   
+  background: #6ba7eb;   
+}
+
+.plan-table tr:nth-child(2n) {
+  background: #f9f9f9;
+}
+
+.plan-table tr:nth-child(3),
+.plan-table tr:nth-child(5) {
+  background: #e0efff;
+}
+
+.plan-table th:not(:nth-child(1)),
+.plan-table td:not(:nth-child(1)) {
+  border-left: 2px solid #fff;
+}
+
+.plan-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+/* ===================================
+   SNS
+=================================== */
+.sns {
+  background: #e3f2fd;
+  padding: 200px 0;
+}
+
+.sns-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.sns a {
+  overflow: hidden;  
+  width: 185px;
+  padding: 25px 0;
+  color: #8c8c8c;
+  font-size: 40px;
+  text-align: center;
+  transition: color 0.5s;    
+}
+
+.sns a:hover {
+  color: #fff;
+}
+
+/* ===================================
+   フッター
+=================================== */
+footer {
+  background: #cfd8dc;
+}
+
+.footer-wrapper {
+  justify-content: flex-end;    
+}
+
+footer p {
+  padding: 25px 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
