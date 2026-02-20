@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   
   <body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+      <div class="loading-container">
+        <div class="loading-bar-wrapper">
+          <div class="loading-bar"></div>
+        </div>
+        <p class="loading-text">Loading... <span id="percent">0</span>%</p>
+      </div>
+    </div>
+
     <!-- ヘッダー -->
     <header>
       <nav class="header-wrapper">
@@ -26,13 +37,13 @@
       <!-- キービジュアル -->
       <section class="keyvisual">
         <div class="inner">
-          <h1 class="main-title">WEB PRODUCTION COMPANY</h1>
+          <h1 class="main-title typewriter" data-text="WEB PRODUCTION COMPANY">WEB PRODUCTION COMPANY</h1>
           <h2 class="sub-title">DIRECTION,CONTENT MARKETING</h2>
         </div>
       </section>
 
       <!-- NEWS -->
-      <section class="news">
+      <section class="news fade-in">
         <div class="inner news-inner">
           <div class="news-img">
             <img src="images/news/news.png" alt="News">
@@ -52,7 +63,7 @@
       </section>
 
       <!-- SKILLS -->
-      <section class="skills">
+      <section class="skills fade-in">
         <div class="inner">
           <h1 class="section-heading">WE ARE SKILLS</h1>
           <ul class="skills-img">
@@ -67,7 +78,7 @@
       </section>
 
       <!-- PLAN -->
-      <section class="plan">
+      <section class="plan fade-in">
         <div class="inner">
           <h1 class="section-heading">SELECT PLAN</h1>
           <table class="plan-table">
@@ -112,7 +123,7 @@
       </section>
 
       <!-- SNS -->
-      <nav class="sns">
+      <nav class="sns fade-in">
         <div class="inner sns-inner">
           <a class="fab fa-facebook-f" href="#"></a>
           <a class="fas fa-comment-dots" href="#"></a>
@@ -128,5 +139,7 @@
         <p>Copyright(c)</p>
       </div>
     </footer>
+
+    <script src="Js/main.js"></script>
   </body>
 </html>
